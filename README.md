@@ -7,28 +7,32 @@ This repository contains the reproducible technical artifacts requested for the 
 - verified historical inputs for the S&P 500, WTI crude oil, and U.S. CPI
 - held-out 2024 actual outcomes
 - identical baseline and optimized prompts for ChatGPT and Claude
+- complete model responses and extracted numeric forecasts
 - a quantitative evaluation script
 - absolute error and absolute percentage error for each forecast
 - model-level MAPE comparison
 - before-versus-after optimization results
+- the final revised report in `report/Zacharias_Braetyllo_SBA_930_REVISED.pdf`
 
 ## Method
 
 The backtest uses historical values through the end of 2023 and treats 2024 as the held-out evaluation period.
 
-Models are instructed to use only the supplied pre-2024 observations. Their numeric forecasts are entered into `data/model_forecasts.csv`.
+Models were instructed to use only the supplied pre-2024 observations. Their complete responses are preserved in `artifacts/model_responses.md`, and the extracted numeric forecasts are stored in `data/model_forecasts.csv`.
 
 The evaluation script compares each model forecast with the known 2024 actual value:
 
 `forecast -> actual -> absolute error -> absolute percentage error`
 
-The optimization experiment repeats the forecasts with a more structured prompt that adds verified-data constraints, explicit assumptions, uncertainty reporting, and a defined forecasting method. Baseline versus optimized MAPE is then compared.
+The optimization experiment repeats the forecasts with a more structured prompt that adds verified-data constraints, explicit assumptions, uncertainty reporting, and task-specific analysis criteria. Baseline versus optimized MAPE is then compared.
 
 ## Data sources
 
 - S&P 500: Federal Reserve Bank of St. Louis FRED, series `SP500` (source: S&P Dow Jones Indices LLC)
 - WTI crude oil: FRED series `MCOILWTICO` / `WTISPLC` (source: U.S. Energy Information Administration / Federal Reserve Bank of St. Louis)
 - CPI-U: U.S. Bureau of Labor Statistics
+
+Detailed source references are documented in `artifacts/data_sources.md`.
 
 The included CSV files are small evaluation extracts rather than full source datasets.
 
@@ -38,13 +42,11 @@ The included CSV files are small evaluation extracts rather than full source dat
 uv run python src/evaluate.py
 ```
 
-Before running, fill the `forecast_value` column in:
+The committed forecasts are already populated in:
 
 ```text
 data/model_forecasts.csv
 ```
-
-using the model outputs from `artifacts/prompts.md`.
 
 Generated files:
 
