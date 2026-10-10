@@ -1,0 +1,3 @@
+model,baseline_mape_percent,optimized_mape_percent,mape_improvement_points,relative_improvement_percent
+ChatGPT,9.31,3.75,5.56,59.72
+Claude,10.66,7.67,2.99,28.05

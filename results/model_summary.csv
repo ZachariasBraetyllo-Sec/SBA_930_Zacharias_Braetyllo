@@ -1,0 +1,5 @@
+model,prompt_type,n_forecasts,mape_percent
+ChatGPT,baseline,3,9.31
+ChatGPT,optimized,3,3.75
+Claude,baseline,3,10.66
+Claude,optimized,3,7.67

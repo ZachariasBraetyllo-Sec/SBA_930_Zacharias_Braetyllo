@@ -1,0 +1,13 @@
+model,prompt_type,metric,forecast,actual,absolute_error,absolute_percentage_error
+ChatGPT,baseline,sp500_year_end,5250.0,5881.63,631.63,10.74
+ChatGPT,baseline,wti_december_avg,72.5,70.12,2.38,3.39
+ChatGPT,baseline,cpi_yoy_december,2.5,2.9,0.4,13.79
+ChatGPT,optimized,sp500_year_end,5581.0,5881.63,300.63,5.11
+ChatGPT,optimized,wti_december_avg,72.0,70.12,1.88,2.68
+ChatGPT,optimized,cpi_yoy_december,2.8,2.9,0.1,3.45
+Claude,baseline,sp500_year_end,5257.0,5881.63,624.63,10.62
+Claude,baseline,wti_december_avg,73.0,70.12,2.88,4.11
+Claude,baseline,cpi_yoy_december,2.4,2.9,0.5,17.24
+Claude,optimized,sp500_year_end,5008.0,5881.63,873.63,14.85
+Claude,optimized,wti_december_avg,71.0,70.12,0.88,1.25
+Claude,optimized,cpi_yoy_december,2.7,2.9,0.2,6.9
