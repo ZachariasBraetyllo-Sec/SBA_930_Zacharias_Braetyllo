@@ -1,0 +1,4 @@
+metric,date,actual_value,unit
+sp500_year_end,2024-12-31,5881.63,index
+wti_december_avg,2024-12-01,70.12,USD/barrel
+cpi_yoy_december,2024-12-01,2.9,percent

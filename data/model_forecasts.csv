@@ -1,0 +1,13 @@
+model,prompt_type,metric,forecast_value
+ChatGPT,baseline,sp500_year_end,
+ChatGPT,baseline,wti_december_avg,
+ChatGPT,baseline,cpi_yoy_december,
+ChatGPT,optimized,sp500_year_end,
+ChatGPT,optimized,wti_december_avg,
+ChatGPT,optimized,cpi_yoy_december,
+Claude,baseline,sp500_year_end,
+Claude,baseline,wti_december_avg,
+Claude,baseline,cpi_yoy_december,
+Claude,optimized,sp500_year_end,
+Claude,optimized,wti_december_avg,
+Claude,optimized,cpi_yoy_december,

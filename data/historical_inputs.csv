@@ -1,0 +1,14 @@
+metric,date,value,unit
+sp500_year_end,2019-12-31,3230.78,index
+sp500_year_end,2020-12-31,3756.07,index
+sp500_year_end,2021-12-31,4766.18,index
+sp500_year_end,2022-12-30,3839.5,index
+sp500_year_end,2023-12-29,4769.83,index
+wti_december_avg,2020-12-01,47.02,USD/barrel
+wti_december_avg,2021-12-01,71.71,USD/barrel
+wti_december_avg,2022-12-01,76.44,USD/barrel
+wti_december_avg,2023-12-01,71.9,USD/barrel
+cpi_yoy_december,2020-12-01,1.4,percent
+cpi_yoy_december,2021-12-01,7.0,percent
+cpi_yoy_december,2022-12-01,6.5,percent
+cpi_yoy_december,2023-12-01,3.4,percent
